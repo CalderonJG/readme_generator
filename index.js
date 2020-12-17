@@ -6,12 +6,34 @@ const fs = require('fs');
 inquirer.prompt([
     {
         type: 'input',
-        message: 'What is the name of your application?',
-        name: 'name',
+        name: 'title',
+        message: 'What is the title of your application?',
     },
     {
-
-    }
+        type: 'input',
+        name: 'description',
+        message: 'Please describe your application.',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the installation instructions for your application?',
+    },
+        {
+        type: 'input',
+        name: 'usage',
+        message: 'Is there any usage information for your application?',
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Please state the guidelines for contributing to your application.',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What are the test instruction for your application?',
+    },
 ])
 
 
