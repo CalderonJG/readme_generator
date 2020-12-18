@@ -33,6 +33,14 @@ inquirer.prompt([
         type: 'input',
         name: 'test',
         message: 'What are the test instruction for your application?',
+
+    },
+    {
+        type: 'input',
+        name: 'license',
+        message: 'Which license did you use for your application?',
+        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3'],
+
     },
 ])
 
