@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// array of questions for user
+// array of prompts for user
 inquirer.prompt([
     {
         type: 'input',
@@ -38,9 +38,18 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'license',
-        message: 'Which license did you use for your application?',
         choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3'],
-
+        message: 'Which license did you use for your application?',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your Github username?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please provide the best email address to reach you?',
     },
 ])
 
